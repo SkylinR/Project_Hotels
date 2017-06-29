@@ -1,0 +1,6 @@
+.sign-up-comp {
+  margin: 5%;
+}
+.sign-up-comp :nth-child(n) {
+  margin: 5px;
+}

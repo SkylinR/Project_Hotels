@@ -1,0 +1,6 @@
+.sign-in-comp {
+  margin: 5%;
+}
+.sign-in-comp :nth-child(n) {
+  margin: 5px;
+}

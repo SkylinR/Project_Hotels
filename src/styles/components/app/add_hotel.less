@@ -1,58 +1,54 @@
-.add-hotel-comp{
+.add-hotel-comp {
   padding: 20px;
 
-  .add-hotel-form-wrapper{
+  .add-hotel-form-wrapper {
     display: inline-block;
     border: 2px solid black;
     padding: 5px;
 
-    form{
+    input, textarea, button {
+      color: white;
+      display: block;
+      margin: 5px 0;
+      padding: 0 4px;
+      height: 40px;
+      width: 250px;
+      outline: none;
+      border: 2px solid @basic-color1;
+      background-color: rgba(0, 0, 0, .2);
+    }
 
-      input,textarea,button{
-        color: white;
-        display: block;
-        margin: 5px 0;
-        padding: 0 4px;
-        height: 40px;
-        width: 250px;
-        outline: none;
-        border: 2px solid @basic-color1;
-        background-color: rgba(0,0,0,.2);
-      }
+    input {
+      line-height: 40px;
+    }
 
-      input {
-        line-height: 40px;
-      }
+    textarea {
+      height: 200px;
+      resize: none;
+    }
 
-      textarea{
-        height: 200px;
-
-      }
-
-      button{
-        transition: background-color 0.3s;
-      }
-      button:hover{
-        background-color: rgba(0,0,0,.7);
-      }
+    button {
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: rgba(0, 0, 0, .7);
     }
 
   }
 
-
-  @media only screen and (min-width: 1200px){
-
-  }
-
-  @media only screen and (min-width: 992px) and (max-width: 1199px){
+  @media only screen and (min-width: 1200px) {
 
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 991px){
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
   }
 
-  @media only screen and (max-width: 768px){
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  }
+
+  @media only screen and (max-width: 768px) {
 
   }
 }

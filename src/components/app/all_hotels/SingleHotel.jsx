@@ -8,7 +8,7 @@ class SingleHotel extends Component {
 
         return (
             <div className="single-hotel-comp">
-                <img className="hotel-photo" src="http://www.starwoodhotels.com/pub/media/1703/she1703ex.167698_xx.jpg" alt="hotel photo"/>
+                <img className="hotel-photo" src="http://www.starwoodhotels.com/pub/media/1703/she1703ex.167698_xx.jpg" alt="hotel"/>
 
                 <div className="hotel-info">
                     <div className="name">{name}</div>

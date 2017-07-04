@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28baf850-29a0-421e-b1c7-c0b35f15e908" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/app/AddHotel.jsx" afterPath="$PROJECT_DIR$/src/components/app/AddHotel.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/components/app/add_hotel.less" afterPath="$PROJECT_DIR$/src/styles/components/app/add_hotel.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/main.css" afterPath="$PROJECT_DIR$/src/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/app/AllHotels.jsx" afterPath="$PROJECT_DIR$/src/components/app/AllHotels.jsx" />
     </list>
     <ignored path="hotels.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,11 +41,9 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="1" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,16 +53,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/main.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -95,11 +81,34 @@
       <file leaf-file-name="AddHotel.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/app/AddHotel.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+            <state relative-caret-position="255">
+              <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#1299#1400#0" expanded="false" />
+                <element signature="e#1413#1456#0" expanded="false" />
+                <element signature="e#1495#1597#0" expanded="false" />
+                <element signature="e#1610#1655#0" expanded="false" />
+                <element signature="e#1693#1793#0" expanded="false" />
+                <element signature="e#1806#1850#0" expanded="false" />
+                <element signature="e#1927#2043#0" expanded="false" />
+                <element signature="e#2056#2099#0" expanded="false" />
+                <element signature="e#2122#2514#0" expanded="false" />
+                <element signature="e#2258#2436#0" expanded="false" />
+                <element signature="e#2528#2878#0" expanded="false" />
+                <element signature="e#2556#2791#0" expanded="false" />
+                <element signature="e#2564#2790#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllHotels.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/app/AllHotels.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/components/Navigation.jsx" />
         <option value="$PROJECT_DIR$/src/components/Provider.jsx" />
         <option value="$PROJECT_DIR$/src/components/Home.jsx" />
-        <option value="$PROJECT_DIR$/src/components/app/AllHotels.jsx" />
         <option value="$PROJECT_DIR$/src/components/App.jsx" />
         <option value="$PROJECT_DIR$/src/components/app/Navigation.jsx" />
         <option value="$PROJECT_DIR$/src/styles/main.less" />
@@ -191,6 +199,7 @@
         <option value="$PROJECT_DIR$/src/components/app/Home.jsx" />
         <option value="$PROJECT_DIR$/src/styles/components/app/add_hotel.less" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/app/AllHotels.jsx" />
         <option value="$PROJECT_DIR$/src/components/app/AddHotel.jsx" />
       </list>
     </option>
@@ -414,12 +423,12 @@
       <workItem from="1498643121922" duration="2349000" />
       <workItem from="1498717001480" duration="686000" />
       <workItem from="1499088076759" duration="291000" />
-      <workItem from="1499145269691" duration="11665000" />
+      <workItem from="1499145269691" duration="15536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54528000" />
+    <option name="totallyTimeSpent" value="58399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="163" width="1616" height="886" extended-state="6" />
@@ -428,9 +437,10 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17553866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07436919" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07436919" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24968314" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13944224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -440,7 +450,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -730,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/app/AllHotels.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/components/app.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -764,14 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/components/app/all_hotels.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -808,6 +802,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/components/app/all_hotels.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/app/AllHotels.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -820,20 +830,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="1" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/app/AddHotel.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        <state relative-caret-position="255">
+          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#1299#1400#0" expanded="false" />
+            <element signature="e#1413#1456#0" expanded="false" />
+            <element signature="e#1495#1597#0" expanded="false" />
+            <element signature="e#1610#1655#0" expanded="false" />
+            <element signature="e#1693#1793#0" expanded="false" />
+            <element signature="e#1806#1850#0" expanded="false" />
+            <element signature="e#1927#2043#0" expanded="false" />
+            <element signature="e#2056#2099#0" expanded="false" />
+            <element signature="e#2122#2514#0" expanded="false" />
+            <element signature="e#2258#2436#0" expanded="false" />
+            <element signature="e#2528#2878#0" expanded="false" />
+            <element signature="e#2556#2791#0" expanded="false" />
+            <element signature="e#2564#2790#0" expanded="false" />
           </folding>
         </state>
       </provider>

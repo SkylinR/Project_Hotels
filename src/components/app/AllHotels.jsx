@@ -16,7 +16,6 @@ class AllHotels extends Component {
                 Hotels.push({name, floors_numb, rooms_numb, descr})
             })
 
-            console.log("TUTAJ LOG ", Hotels);
             this.props.setHotels(Hotels);
         })
     }

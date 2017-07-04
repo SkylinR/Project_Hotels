@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import {connect} from 'react-redux';
 import {hotelRef} from '../../firebase';
 import AlertContainer from 'react-alert'
@@ -38,7 +39,8 @@ class AddHotel extends Component {
         transition: 'fade'
     }
 
-    addHotel(e) {
+    addHotel = (e) => {
+        console.log(ReactDOM.findDOMNode(this.refs.addHotelField));
 
         const {name, floors_numb, rooms_numb, descr} = this.state;
         let {wrongNameText, wrongFloorsText, wrongRoomsText, wrongDescrText} = this.state.infos;
@@ -77,17 +79,24 @@ class AddHotel extends Component {
         }
 
         if (canPush) {
-            hotelRef.push({name, floors_numb, rooms_numb, descr});
+            // TODO UNCOMMENT
+            // hotelRef.push({name, floors_numb, rooms_numb, descr});
+            this.setState({infos: {
+                wrongName: { text: ''},
+                wrongFloors: { text: ''},
+                wrongRooms: { text: ''},
+                wrongDescr: { text: ''}
+            }});
             this.msg.success('Hotel was added to our database');
         }
         else {
-
             this.setState({infos: {
                 wrongName: { text: wrongNameText},
                 wrongFloors: { text: wrongFloorsText},
                 wrongRooms: { text: wrongRoomsText},
                 wrongDescr: { text: wrongDescrText}
             }});
+
             this.msg.error('Somethings wrong please fill inputs again.');
         }
 
@@ -99,19 +108,19 @@ class AddHotel extends Component {
             <div className="add-hotel-comp">
                 <div className="header">Add Hotel</div>
                 <div className="add-hotel-form-wrapper">
-                    <input className="add-hotel-inpt" placeholder="Name"
+                    <input className="add-hotel-inpt" ref="addHotelField" placeholder="Name"
                            onChange={event => this.setState({name: event.target.value})}/>
                     <div className="wrong-type-inpt">{this.state.infos.wrongName.text}</div>
 
-                    <input className="add-hotel-inpt" placeholder="Floors number"
+                    <input className="add-hotel-inpt" ref="addHotelField" placeholder="Floors number"
                            onChange={event => this.setState({floors_numb: event.target.value})}/>
                     <div className="wrong-type-inpt">{this.state.infos.wrongFloors.text}</div>
 
-                    <input className="add-hotel-inpt" placeholder="Rooms number"
+                    <input className="add-hotel-inpt" ref="addHotelField" placeholder="Rooms number"
                            onChange={event => this.setState({rooms_numb: event.target.value})}/>
                     <div className="wrong-type-inpt">{this.state.infos.wrongRooms.text}</div>
 
-                    <textarea className="add-hotel-textarea" placeholder="Hotel description"
+                    <textarea className="add-hotel-textarea" ref="addHotelField" placeholder="Hotel description"
                               onChange={event => this.setState({descr: event.target.value})}></textarea>
                     <div className="wrong-type-inpt">{this.state.infos.wrongDescr.text}</div>
 

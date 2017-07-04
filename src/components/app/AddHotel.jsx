@@ -8,10 +8,25 @@ class AddHotel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: '',
-            floors_numb: '',
-            rooms_numb: '',
-            descr: '',
+            'name': '',
+            'floors_numb': '',
+            'rooms_numb': '',
+            'descr': '',
+            'infos': {
+                'wrongName': {
+                    'text': ''
+                },
+                'wrongFloors': {
+                    'text': ''
+                },
+                'wrongRooms': {
+                    'text': ''
+                },
+                'wrongDescr': {
+                    'text': ''
+                },
+            }
+
         }
     }
 
@@ -23,33 +38,56 @@ class AddHotel extends Component {
         transition: 'fade'
     }
 
-    addHotel() {
+    addHotel(e) {
+
         const {name, floors_numb, rooms_numb, descr} = this.state;
+        let {wrongNameText, wrongFloorsText, wrongRoomsText, wrongDescrText} = this.state.infos;
         let canPush = true;
 
-        if(name == null || name == undefined || !(name.length > 1)){
-            console.log("name cant be null");
+        if (name === null || name === undefined || !(name.length > 1)) {
             canPush = false;
+            wrongNameText = 'Fill correctly the hotel name';
         }
-        if(!isNumeric(floors_numb) ){
-            console.log("floors number must be the number");
-            canPush = false;
-        }
-        if(!isNumeric(rooms_numb)){
-            console.log("rooms number must be the number");
-            canPush = false;
-        }
-        if(descr == null || !(descr.length > 10) || descr == undefined){
-            console.log("description must have 10 characters at least");
-            canPush = false;
+        else{
+            wrongNameText = '';
         }
 
-        if(canPush){
+        if (!isNumeric(floors_numb)) {
+            canPush = false;
+            wrongFloorsText = 'Fill correctly floors number';
+        }
+        else{
+            wrongFloorsText = '';
+        }
+
+        if (!isNumeric(rooms_numb)) {
+            canPush = false;
+            wrongRoomsText = 'Fill correctly rooms number';
+        }
+        else{
+            wrongRoomsText = '';
+        }
+
+        if (descr === null || !(descr.length > 10) || descr === undefined) {
+            canPush = false;
+            wrongDescrText = 'Description must have 10 or more characters';
+        }
+        else{
+            wrongDescrText = ''
+        }
+
+        if (canPush) {
             hotelRef.push({name, floors_numb, rooms_numb, descr});
             this.msg.success('Hotel was added to our database');
         }
-        else{
-            showMessage("eloelo520",'testowa');
+        else {
+
+            this.setState({infos: {
+                wrongName: { text: wrongNameText},
+                wrongFloors: { text: wrongFloorsText},
+                wrongRooms: { text: wrongRoomsText},
+                wrongDescr: { text: wrongDescrText}
+            }});
             this.msg.error('Somethings wrong please fill inputs again.');
         }
 
@@ -61,20 +99,26 @@ class AddHotel extends Component {
             <div className="add-hotel-comp">
                 <div className="header">Add Hotel</div>
                 <div className="add-hotel-form-wrapper">
-                        <input className="add-hotel-inpt" placeholder="Name"
-                               onChange={event => this.setState({name: event.target.value})}/>
-                        <input className="add-hotel-inpt" placeholder="Floors number"
-                               onChange={event => this.setState({floors_numb: event.target.value})}/>
-                        <input className="add-hotel-inpt" placeholder="Rooms number"
-                               onChange={event => this.setState({rooms_numb: event.target.value})}/>
-                        <textarea className="add-hotel-textarea" placeholder="Hotel description"
-                                  onChange={event => this.setState({descr: event.target.value})}></textarea>
-                        <button className="add-hotel-btn" onClick={() => this.addHotel()}>ADD HOTEL</button>
-                    <div className="testowa">dsa</div>
+                    <input className="add-hotel-inpt" placeholder="Name"
+                           onChange={event => this.setState({name: event.target.value})}/>
+                    <div className="wrong-type-inpt">{this.state.infos.wrongName.text}</div>
+
+                    <input className="add-hotel-inpt" placeholder="Floors number"
+                           onChange={event => this.setState({floors_numb: event.target.value})}/>
+                    <div className="wrong-type-inpt">{this.state.infos.wrongFloors.text}</div>
+
+                    <input className="add-hotel-inpt" placeholder="Rooms number"
+                           onChange={event => this.setState({rooms_numb: event.target.value})}/>
+                    <div className="wrong-type-inpt">{this.state.infos.wrongRooms.text}</div>
+
+                    <textarea className="add-hotel-textarea" placeholder="Hotel description"
+                              onChange={event => this.setState({descr: event.target.value})}></textarea>
+                    <div className="wrong-type-inpt">{this.state.infos.wrongDescr.text}</div>
+
+                    <button className="add-hotel-btn" onClick={() => this.addHotel()}>ADD HOTEL</button>
                 </div>
 
                 <AlertContainer ref={a => this.msg = a} {...this.alertOptions} />
-
             </div>
         )
     }
@@ -90,11 +134,6 @@ function mapStateToProps(state) {
 
 function isNumeric(value) {
     return /^\d+$/.test(value);
-}
-
-function showMessage(message, classname){
-    console.log(classname);
-    console.log(document.getElementsByClassName(classname));
 }
 
 export default connect(mapStateToProps, null)(AddHotel);

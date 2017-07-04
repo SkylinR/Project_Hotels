@@ -95,16 +95,28 @@ body {
 }
 .add-hotel-comp .add-hotel-form-wrapper input {
   line-height: 40px;
+  margin-bottom: 20px;
 }
 .add-hotel-comp .add-hotel-form-wrapper textarea {
   height: 200px;
   resize: none;
+  margin-bottom: 20px;
 }
 .add-hotel-comp .add-hotel-form-wrapper button {
   transition: background-color 0.3s;
 }
 .add-hotel-comp .add-hotel-form-wrapper button:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+.add-hotel-comp .add-hotel-form-wrapper .wrong-type-inpt {
+  position: absolute;
+  font-size: 12px;
+  color: red;
+  margin-top: -18px;
+  white-space: nowrap;
+  width: 250px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 .about-comp {
   padding: 20px;

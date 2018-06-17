@@ -80,9 +80,9 @@ body {
   border: 2px solid black;
   padding: 5px;
 }
-.add-hotel-comp .add-hotel-form-wrapper form input,
-.add-hotel-comp .add-hotel-form-wrapper form textarea,
-.add-hotel-comp .add-hotel-form-wrapper form button {
+.add-hotel-comp .add-hotel-form-wrapper input,
+.add-hotel-comp .add-hotel-form-wrapper textarea,
+.add-hotel-comp .add-hotel-form-wrapper button {
   color: white;
   display: block;
   margin: 5px 0;
@@ -93,17 +93,30 @@ body {
   border: 2px solid #f22;
   background-color: rgba(0, 0, 0, 0.2);
 }
-.add-hotel-comp .add-hotel-form-wrapper form input {
+.add-hotel-comp .add-hotel-form-wrapper input {
   line-height: 40px;
+  margin-bottom: 20px;
 }
-.add-hotel-comp .add-hotel-form-wrapper form textarea {
+.add-hotel-comp .add-hotel-form-wrapper textarea {
   height: 200px;
+  resize: none;
+  margin-bottom: 20px;
 }
-.add-hotel-comp .add-hotel-form-wrapper form button {
+.add-hotel-comp .add-hotel-form-wrapper button {
   transition: background-color 0.3s;
 }
-.add-hotel-comp .add-hotel-form-wrapper form button:hover {
+.add-hotel-comp .add-hotel-form-wrapper button:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+.add-hotel-comp .add-hotel-form-wrapper .wrong-type-inpt {
+  position: absolute;
+  font-size: 12px;
+  color: red;
+  margin-top: -18px;
+  white-space: nowrap;
+  width: 250px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 .about-comp {
   padding: 20px;
